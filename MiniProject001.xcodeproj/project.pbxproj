@@ -6,13 +6,31 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6820AABC2C9BFF2F0043FC52 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6820AABB2C9BFF2F0043FC52 /* Kingfisher */; };
+		6820AABF2C9C03980043FC52 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6820AABE2C9C03980043FC52 /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		680AD6072C9A836A0032F1BC /* MiniProject001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniProject001.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6820AACD2C9C12C00043FC52 /* Exceptions for "MiniProject001" folder in "MiniProject001" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 680AD6062C9A836A0032F1BC /* MiniProject001 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		680AD6092C9A836A0032F1BC /* MiniProject001 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6820AACD2C9C12C00043FC52 /* Exceptions for "MiniProject001" folder in "MiniProject001" target */,
+			);
 			path = MiniProject001;
 			sourceTree = "<group>";
 		};
@@ -23,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6820AABC2C9BFF2F0043FC52 /* Kingfisher in Frameworks */,
+				6820AABF2C9C03980043FC52 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +85,8 @@
 			);
 			name = MiniProject001;
 			packageProductDependencies = (
+				6820AABB2C9BFF2F0043FC52 /* Kingfisher */,
+				6820AABE2C9C03980043FC52 /* Alamofire */,
 			);
 			productName = MiniProject001;
 			productReference = 680AD6072C9A836A0032F1BC /* MiniProject001.app */;
@@ -94,6 +116,10 @@
 			);
 			mainGroup = 680AD5FE2C9A836A0032F1BC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6820AABA2C9BFF2F0043FC52 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				6820AABD2C9C03980043FC52 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 680AD6082C9A836A0032F1BC /* Products */;
 			projectDirPath = "";
@@ -254,6 +280,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MiniProject001/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MiniProject001/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,6 +309,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MiniProject001/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MiniProject001/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -322,6 +350,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6820AABA2C9BFF2F0043FC52 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.1;
+			};
+		};
+		6820AABD2C9C03980043FC52 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6820AABB2C9BFF2F0043FC52 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6820AABA2C9BFF2F0043FC52 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		6820AABE2C9C03980043FC52 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6820AABD2C9C03980043FC52 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 680AD5FF2C9A836A0032F1BC /* Project object */;
 }
